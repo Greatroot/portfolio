@@ -1,8 +1,8 @@
-import logo from './logo.svg';
 import './App.css';
 import NavMenu from "./components/NavMenu";
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import GlobalStyles from './styles/GlobalStyles';
+import Typography from "./styles/Typography";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
@@ -14,6 +14,7 @@ function App() {
         <Router>
             <NavMenu />
             <GlobalStyles />
+            <Typography />
             <Switch>
                 <Route path="/" exact>
                     <Home />
