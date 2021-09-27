@@ -18,7 +18,7 @@ const GlobalStyles = createGlobalStyle`
   
   html {
     font-size: 10px;
-    font-family: 'Roberto Mono', sans-serif;
+    font-family: 'Roboto Mono', sans-serif;
     background-color: var(--dark-bg);
   }
   

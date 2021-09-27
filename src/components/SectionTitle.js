@@ -6,8 +6,8 @@ const SectionTitle = ({ subheading = 'This is subheading', heading = 'This is he
     // See how we are injecting the styles from a parent component here (i.e. AboutSection).
     return (
         <SectionTitleStyle className="section__title">
-            <p>This is subtitle</p>
-            <h2>This is title</h2>
+            <p>{subheading}</p>
+            <h2>{heading}</h2>
         </SectionTitleStyle>
     );
 };
