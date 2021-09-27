@@ -31,7 +31,7 @@ const ContactForm = () => {
                 <div className="form-group">
                     <label htmlFor="message">Your message
                         <textarea id="message"
-                                  value={email}
+                                  value={message}
                                   onChange={(e) => setMessage(e.target.value)}
                         />
                     </label>

@@ -32,7 +32,7 @@ const ProjectsSection = () => {
                     >
                         { projects.map((project, index) => {
                             if(index >= 5) { // How we make it so that only 5 items are visible on the screen at one time.
-                                return;
+                                return null;
                             }
                             return(
                                 <SwiperSlide key={project.id}>
