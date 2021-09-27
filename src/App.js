@@ -6,13 +6,17 @@ import Typography from "./styles/Typography";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
+import ContactSection from "./components/ContactSection";
+import Footer from "./components/Footer";
 import Contact from "./pages/Contact";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <div className="App">
         <Router>
             <NavMenu />
+            <ScrollToTop />
             <GlobalStyles />
             <Typography />
             <Switch>
@@ -35,6 +39,7 @@ function App() {
                     <Contact />
                 </Route>
             </Switch>
+            <Footer />
         </Router>
     </div>
   );
