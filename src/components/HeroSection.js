@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
-import HeroImg from '../assets/images/portfolio1.JPG';
+import HeroImg from '../assets/images/portfolio1.png';
 import PText from "./PText";
 import Button from "./Button";
 import SocialMediaArrow from '../assets/images/social-media-arrow.svg';
@@ -21,7 +21,10 @@ const HeroSection = () => {
                     </div>
                     <div className="hero__info">
                         <PText>
-                            I am a student at the University of Washington... bla bla bla. Need to fill this out.
+                            I am a cs undergrad at the University of Washington and have a passion for
+                            developing software that can improve the lives of others, espeically when it
+                            comes to increasing accessibility for Deaf, DeafBlind, and others in the
+                            disabled community.
                         </PText>
                         <Button link='/projects' btnText="see my work" outline={false} />
                     </div>

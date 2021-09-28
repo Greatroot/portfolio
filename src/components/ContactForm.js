@@ -1,18 +1,35 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import { useState } from "react";
 import styled from "styled-components";
+import emailjs from 'emailjs-com'
 
 const ContactForm = () => {
+    const form = useRef();
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
 
+    const sendEmail = (e) => {
+        e.preventDefault();
+        console.log("sendEmail got clicked")
+        console.log(e);
+
+        emailjs.sendForm('service_0lvha8a', 'template_1t05avr', form.current, 'user_xZNb5R42OllQccqbn22Yx')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+            console.log(error.text);
+        });
+        // e.target.reset();
+    };
+
     return (
         <div>
-            <FormStyles>
+            <FormStyles onSubmit={sendEmail} ref={form}>
                 <div className="form-group">
                     <label htmlFor="name">Your name
                         <input type="text"
+                               name="name"
                                id="name"
                                value={name}
                                onChange={(e) => setName(e.target.value)}
@@ -22,6 +39,7 @@ const ContactForm = () => {
                 <div className="form-group">
                     <label htmlFor="email">Your email
                         <input type="text"
+                               name="email"
                                id="email"
                                value={email}
                                onChange={(e) => setEmail(e.target.value)}
@@ -31,12 +49,13 @@ const ContactForm = () => {
                 <div className="form-group">
                     <label htmlFor="message">Your message
                         <textarea id="message"
+                                  name="message"
                                   value={message}
                                   onChange={(e) => setMessage(e.target.value)}
                         />
                     </label>
                 </div>
-                <button type="submit">Send</button>
+                <button type="submit" onClick={sendEmail}>Send</button>
             </FormStyles>
         </div>
     );
