@@ -15,17 +15,17 @@ const AboutSection = () => {
                                   heading="About me"
                     />
                     <PText>
-                        My name is Ben Kosa and I am a computer
-                        science undergraduate at the University of
-                        Washington - Seattle and have a passion for
-                        programming and building technology that
-                        can make a difference in people's lives.
-                        Write a few paragraphs for this...
+                        I am from Olympia, Washington: the capital of Washington
+                        State and a beautiful place that I will always hold dear.
+                        I'm also proud to call Seattle, Washington my home and is
+                        where I currently am studying computer science as an undergrad
+                        at the University of Washington. I love to program, compete in
+                        triathlons, run and bike around Seattle, and Deaf culture.
                     </PText>
                     <div className="aboutSection__buttons">
-                        <Button btnLink="/projects"
+                        <Button link="/projects"
                                 btnText="Works" />
-                        <Button btnLink="/about"
+                        <Button link="/about"
                                 btnText="Read More"
                                 outline />
 

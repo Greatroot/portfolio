@@ -2,10 +2,14 @@ import React from 'react';
 import {Link} from "react-router-dom";
 import styled from "styled-components";
 
-const Button = ({ link= "test", btnText= 'Test', outline= false }) => {
+const Button = ({ link= "test", btnText= 'Test', outline= false, download= false, }) => {
     return (
         <ButtonStyle outline={outline} className="button-wrapper">
-            <Link className="button" to={link} >{ btnText }</Link>
+            {download ? (
+                <Link className="button" to={link} download>{ btnText }</Link>
+            ) : (
+                <Link className="button" to={link} >{ btnText }</Link>
+            )}
         </ButtonStyle>
     );
 };

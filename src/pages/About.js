@@ -5,6 +5,7 @@ import AboutImg from '../assets/images/about-page-img.png';
 import styled from "styled-components";
 import AboutInfoItem from "../components/AboutInfoItem";
 import ContactBanner from "../components/ContactBanner";
+// import Resume from "../../public/resume.pdf"; // TODO: Make this work!!!
 
 const About = () => {
     return (
@@ -49,7 +50,7 @@ const About = () => {
                                 mother always presented challenges when I was growing up.
                             </PText>
                         </div>
-                        <Button btnText="Checkout my Resume!" btnLink="#" />
+                        <Button btnText="Checkout my Resume!" btnLink="../../public/resume.pdf" download={true}/>
                     </div>
                     <div className="right">
                         <img src={AboutImg} alt="Ben Kosa Img" />

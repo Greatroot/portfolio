@@ -7,7 +7,6 @@ import ProjectInfo from '../assets/data/projects';
 
 // TODO: Make projects be one section and the page called "What I've been up to".
 const Projects = () => {
-    const projects = ProjectInfo;
     const [filteredProjects, setFilteredProjects] = useState(ProjectInfo)
     const [searchText, setSearchText] = useState('');
 
