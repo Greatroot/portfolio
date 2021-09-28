@@ -12,8 +12,8 @@ const ContactBanner = () => {
                     <PText>
                         Have a project in mind?
                     </PText>
-                    <h3 className="contactBanner__heading">Let me help you!</h3>
-                    <Button btnText="Contact Now" btnLink="/contact" />
+                    <h3 className="contactBanner__heading">I'd be happy to help!</h3>
+                    <Button btnText="Contact Now" link="/contact" />
                 </div>
             </div>
         </ContactBannerStyles>
