@@ -2,7 +2,6 @@ import React from 'react';
 import SectionTitle from "./SectionTitle";
 import ServicesSectionItem from "./ServicesSectionItem";
 import styled from "styled-components";
-import {MdDesktopMac} from "react-icons/md";
 import {AiFillCode} from "react-icons/ai";
 import {GiRunningShoe} from "react-icons/gi";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
